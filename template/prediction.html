@@ -1,0 +1,366 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <title>Prediction</title>
+ <link href="https://i.pinimg.com/originals/f2/e8/d8/f2e8d8780cc1aa8129c053bbf7a612ed.png" rel="icon">
+    <style>
+      h1{text-align:center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+      .h1{
+        text-align:centre;
+      }
+        
+        form {
+  text-align:center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:white;
+   
+        } 
+        body {
+        padding-bottom:50px;
+}
+.form{
+   
+    margin: 45px;
+    padding: 3px 3px 3px 3px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #C1E0EA;
+    
+}
+
+
+.train{
+  background-color:#DC143C;
+  margin-left: 507px;
+  margin-right: 493px;
+  
+ 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom:50px;
+}
+
+
+.button-6 {
+  align-items: center;
+  background-color:grey;
+ 
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color:#FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+ 
+}
+sum{
+  margin-top:50px;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: grey;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+          .container .box { 
+                width:90%; 
+                margin:50px; 
+                
+                display:table; 
+                align:center;
+            } 
+            .container .box .box-row { 
+                display:table-row; 
+                
+            } 
+            .container .box .box-cell { 
+                display:table-cell; 
+                width:25%; 
+                padding:10px; 
+                
+            } 
+            .container .box .box-cell.box1 { 
+                background:#DC143C; 
+                color:white; 
+                text-align:center; 
+                padding-left:15px;
+                
+                  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            } 
+            .container .box .box-cell.box2 { 
+                background:grey; 
+                text-align:center ;
+                color:white;
+                padding-left:15px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            } 
+            .container .box .box-cell.box3 { 
+                background:#DC143C; 
+                text-align:center; 
+                color:white;
+                padding-left:15px;
+                 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+           
+select {
+    width: 150px;
+    height: 32px;
+    padding: 4px;
+    line-height: 32px;
+    text-indent: 4px;
+    cursor: pointer;
+    font-size:12px;
+    
+}
+#edu{
+  background:grey;
+}
+#dis{
+  background:#DC143C;
+}
+
+@media (max-width: 767px){
+   box-cell{
+    width:100%;
+    text-align: center;
+   .container{
+      width:100%;
+
+   } 
+  }
+}
+       
+    </style>
+</head>
+<body>
+  
+    <div class="form"><h1 style="font-size: 30px" text-align:"center">Prediction</h1></div>
+    <div class="main"></div>
+   <form action = '#' method="post">
+       
+           <br>
+    <div class="container">
+      <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1">   
+                      <br>
+    <label for="name">Gender :</label><br>
+     <br>
+      
+    <input class="gender" type="radio"  id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input class="Gender" type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+<br>
+                   
+                   <br> </div>
+                   <br>
+          <div class="box-cell box2">      
+   <br>
+    <label for="name">Relevant Experience :</label><br>
+     <br>
+        <input type="radio" id="Have Experience" name="Relevant Experience" value="Has relevent experience">
+        <label for="hasexperience">Have Experience</label><br>
+        <input type="radio" id="No Experience" name="Relevant Experience" value="No relevent experience">
+        <label for="noexperience">No Experience</label><br>
+    <br>
+         <br> </div>
+      <br>
+<div class="box-cell box3"> 
+        <br><label for="name">University :</label><br>
+     <br>
+        <input type="radio" id="Full time university " name="university" value="Full time course">
+        <label for="fulltime">Full time</label><br>
+        <input type="radio" id="Part time university" name="university" value="Part time">
+        <label for="parttime">Part time</label><br>
+        <input type="radio" id="No Enrollment" name="university" value="no_enrollment">
+        <label for="noenrollment">No Enrollment</label><br>
+      <br>
+
+</div>
+    </div>
+      </div>
+    
+</div>
+   <div class="container">
+      <div class="box"> 
+                <div class="box-row"> 
+                    <div id="edu" class="box-cell box1">
+                      <br>
+        <label for="qualification">Education Qualification :</label>
+        <br>
+        <br>
+        <select id="qualification" name="qualification">
+          <option value="Primary School">Primary School</option>
+          <option value="High School">High School</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Masters">Masters</option>
+          <option value="Phd">PHD</option>
+          
+        </select>
+                    </div>
+        <br>
+      <div  id="dis"class="box-cell box2"> 
+        <br><label for="discipline">Major Discipline :</label><br>
+        <br>
+        <select id="discipline" name="discipline">
+          <option value="STEM">STEM</option>
+          <option value="Humanities">Humanities</option>
+          <option value="Business Degree">Business Degree</option>
+          <option value="No Major">No Major</option>
+          <option value="Arts">Arts</option>
+          <option value="Others">Others</option>
+          
+        </select>
+        </div>
+     <br>
+
+        <div id="edu" class="box-cell box3"> 
+        <br><label for="Last New Job">Last New Job(in years)</label>
+        <br>
+        <br>
+        <select id="Last New Job" name="Last New Job">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value=">4">>4</option>
+        </select>
+        <br>
+  <br>
+        </div>
+        </div>
+                </div>
+            </div>
+   </div>
+   <div class="container">
+      <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1">
+  <br>
+        <label for="experienceinyears">Experience in years:</label><br>
+        <br>
+        <select id="Experience in years" name="Experience in years">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <br>
+        </select>
+        
+                    </div>
+
+<br>
+        <div class="box-cell box2"> <br>
+        <label for="Company Size">Company Size :</label><br>
+        <br>
+        <select id="Company Size" name="Company Size">
+          <option value="<10"><10</option>
+          <option value="50-99">50-99</option>
+          <option value="100-500">100-500</option>
+          <option value="500-999">500-999</option>
+          <option value="1000-4999">1000-4999</option>
+          <option value="5000-9999">5000-9999</option>
+          <option value="10000+">10000+</option>
+          <br>
+        </select>
+        <br>
+        <br>
+        </div>
+
+
+<br>
+  
+     <div class="box-cell box3"> <br>
+ <label for="companytype">Comapany Type:</label><br>
+ <br>
+        <select id="companytype" name="companytype">
+          <option value="Pvt Ltd">Private Limited</option>
+          <option value="Public Sector">Public Sector</option>
+          <option value="Funded Startup">Funded Startup</option>
+          <option value="Early Stage Startup">Earning State Startup</option>
+          <option value="NGO">NGO</option>
+          <br>
+        </select>
+        <br>
+        </div>
+
+    </div>
+            </div>
+   </div>
+    <div class="train"><br>
+       <br><label for="name">Training Hours:</label><br>
+       <input class="traininghours" type="text" name="traininghours" id="name"><br>
+       <br>
+       <br>
+    </div>
+      </div>
+  
+       <br>
+       <div class="sum">
+       <button type="submit" formaction="/pred" class="button-6">Predict</button>
+      
+       </div>
+    </div>
+
+   </form>
+   <br><h4 align="center"<b>{{data}}</b></h4>
+   <br>
+</body>
+<footer>
+  
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
